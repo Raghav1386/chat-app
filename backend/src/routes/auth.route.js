@@ -1,12 +1,12 @@
 import express from 'express'
 const router =express.Router()
-router.get('/api/auth/signup',(req,res)=>{
+router.get('/signup',(req,res)=>{
     res.send("seignup endpoint")
 })
-router.get('/api/auth/login',(req,res)=>{
+router.get('/login',(req,res)=>{
     res.send("login endpoint")
 })
-router.get('/api/auth/logout',(req,res)=>{
+router.get('/logout',(req,res)=>{
     res.send("logout endpoint")
 })
 export default router 
