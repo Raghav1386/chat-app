@@ -1,25 +1,17 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "engines": {
-    "node": ">=20.x"
+    "node": "20.x"
   },
   "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix backend",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Raghav1386/chat-app.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Raghav1386/chat-app/issues"
-  },
-  "homepage": "https://github.com/Raghav1386/chat-app#readme",
-  "description": ""
+  "license": "ISC"
 }
